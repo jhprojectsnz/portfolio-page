@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+
+.App {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  /*Allow position:absolute elements within a section */
+  position: relative; 
+  /* Each section should take up at least full screen */
+  width: 100%;
+  max-width: 900px;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+h2 {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem;
+  border-bottom:  rgb(240, 24, 0) solid 2px;
+}
+
+.subtitle-container {
+  width: 100%;
+  padding: 0 0 1rem 2rem;
+  font-size: 1.5rem;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgb(240, 24, 0);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.main-text {
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+}
+
+/* Class for elements that should fade in on first load (hero and nav) */
+.appear-animation {
+  opacity: 0;
+  animation: appear 2s linear 1s forwards
+}
+
+@keyframes appear {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* On narrow screens and mobiles sections don't need to take up 100vh */
+@media (max-width:600px) {
+section {
+  min-height: auto;
+} 
+}
+

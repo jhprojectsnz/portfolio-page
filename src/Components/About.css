@@ -1,0 +1,30 @@
+/* Default styles for PC/wide screen 
+Media queries for mobile/narrow screen */
+
+.about-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-container {
+    display: flex;
+}
+
+.about-image {
+    width: 250px;
+    height: 250px;
+}
+
+.about-text {
+    padding: 1rem;
+}
+
+@media (max-width:800px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
