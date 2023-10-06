@@ -1,74 +1,74 @@
-.skills-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* skills box no bigger than 800px or 80%  */
-    width: min(80%, 800px);
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* skills box no bigger than 800px or 80%  */
+  width: min(80%, 800px);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.skills-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0 1rem;
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 1rem;
 }
 
-.skills-subtitle{
-    text-align: center;
-    margin: 0.5rem;
-    /* horizontal padding to expand border/underline, bottom padding to push it down */
-    padding: 0 0.5rem 0.2rem 0.5rem;
-    border-bottom: solid 1px rgb(240, 24, 0);
+.skills-subtitle {
+  text-align: center;
+  margin: 0.5rem;
+  /* horizontal padding to expand border/underline, bottom padding to push it down */
+  padding: 0 0.5rem 0.2rem 0.5rem;
+  border-bottom: solid 1px rgb(240, 24, 0);
 }
 
-.skill{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 3.5rem;
-    padding: 0.5rem;
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 3.5rem;
+  padding: 0.5rem;
 }
 
-.skill-text{
-    margin-top: 0.5rem;
-    font-size: 0.6rem;
-    text-align: center;
-    font-weight: bold;
-    transition: all 0.3s ease;
+.skill-text {
+  margin-top: 0.5rem;
+  font-size: 0.6rem;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
-.skill-icon{
-    height: 40px;
-    width: 40px;
-    transition: all 0.3s ease;
+.skill-icon {
+  height: 40px;
+  width: 40px;
+  transition: all 0.3s ease;
 }
 
 .skill:hover > .skill-icon {
-    color: rgb(240, 24, 0);
-    animation: wobble 0.3s ease;
+  color: rgb(240, 24, 0);
+  animation: wobble 0.3s ease;
 }
 
-.skill:hover > .skill-text{
-    color: rgb(240, 24, 0);
+.skill:hover > .skill-text {
+  color: rgb(240, 24, 0);
 }
 
 /* icons wobble side to side on hover */
 @keyframes wobble {
-    0% {
-        rotate: 0deg;
-    }
-    30% {
-        rotate: 5deg;
-    }
-    70% {
-        rotate: -5deg;
-    }
-    100% {
-        rotate: 0deg
-    }
+  0% {
+    rotate: 0deg;
+  }
+  30% {
+    rotate: 5deg;
+  }
+  70% {
+    rotate: -5deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
 }

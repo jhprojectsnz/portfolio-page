@@ -2,96 +2,97 @@
 Media queries for mobile/narrow screen */
 
 .contact-container {
-    display: flex;
-    width: 100%;
-    padding: 2rem;
-    gap: 1.5rem;
-    /* margin for space between form and footer when verticle window height is reduced  */
-    margin-bottom: 2rem;
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  gap: 1.5rem;
+  /* margin for space between form and footer when verticle window height is reduced  */
+  margin-bottom: 2rem;
 }
 
 .contact-text {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-text h4 {
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
 }
 
 .contact-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-    padding: 2rem;
-    border: 1px solid rgb(240, 24, 0);
-    border-radius: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  padding: 2rem;
+  border: 1px solid rgb(240, 24, 0);
+  border-radius: 15px;
 }
 
 .input-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    /* more padding on top - space for label */
-    padding: 15px 10px 10px;
-    border: solid 1px gray;
-    border-radius: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* more padding on top - space for label */
+  padding: 15px 10px 10px;
+  border: solid 1px gray;
+  border-radius: 10px;
 }
 
 .input-container input {
-    /* make sure the input area is the full length of the surrounding border */
-    min-width:100%;
-    border: none;
+  /* make sure the input area is the full length of the surrounding border */
+  min-width: 100%;
+  border: none;
 }
 
 /* class for elements that should take up two columns */
 .form-wide {
-    grid-column: 1 / 3;
-    width: 100%;
+  grid-column: 1 / 3;
+  width: 100%;
 }
 
 /* class for elements in right column and pushed to the right*/
 .form-right {
-    grid-column: 2;
-    display: flex;
-    justify-content: flex-end;
+  grid-column: 2;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .contact-form label {
-    /* shift labels up so they sit over the input border */
-    position: absolute;
-    top: -9px;
-    left: 10px;
-    padding: 2px;
-    background-color: white;
+  /* shift labels up so they sit over the input border */
+  position: absolute;
+  top: -9px;
+  left: 10px;
+  padding: 2px;
+  background-color: white;
 }
 
 .contact-form textarea {
-    height: 150px;
-    resize: none;
-    border: none;
+  height: 150px;
+  resize: none;
+  border: none;
 }
 
-textarea:focus, input:focus {
-    outline: none;
+textarea:focus,
+input:focus {
+  outline: none;
 }
 
 .input-container:hover {
-    border: 1px solid rgb(240, 24, 0);
+  border: 1px solid rgb(240, 24, 0);
 }
 
 /* switch contact section and form to single column for narrow screens */
-@media (max-width:800px) {
-    .contact-container {
-        flex-direction: column;
-        padding: 1rem 2rem;
-        /* margin for space between form and footer when verticle window height is reduced  */
-        margin-bottom: 4rem;
-    }
+@media (max-width: 800px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 1rem 2rem;
+    /* margin for space between form and footer when verticle window height is reduced  */
+    margin-bottom: 4rem;
+  }
 
-    .contact-form {
-        display: flex;
-        flex-direction: column;
-    }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
 }

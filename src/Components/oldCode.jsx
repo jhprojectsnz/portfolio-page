@@ -6,7 +6,7 @@
 //     return (
 //         <section className="fullnametitle-section">
 //             <div className='fullnametitle-container'>
-//                 <motion.div 
+//                 <motion.div
 //                 className="name-container"
 //                 animate={{x:[-200, 0], opacity:[0, 1]}}
 //                 transition={{
@@ -17,7 +17,7 @@
 //                     <h1>Jonathan</h1>
 //                     <h1>Hubert</h1>
 //                 </motion.div>
-//                 <motion.div 
+//                 <motion.div
 //                 className='separator-line'
 //                 animate={{y:[-200, 0], opacity:[0, 1]}}
 //                 transition={{
@@ -26,7 +26,7 @@
 //                   }}
 //                 />
 //                 <ContactLinks />
-//                 <motion.p 
+//                 <motion.p
 //                 className='intro-text'
 //                 animate={{x:[200, 0], opacity:[0, 1]}}
 //                 transition={{
@@ -36,14 +36,14 @@
 //                     Welcome to my portfolio! <br/> I'm a passionate and driven developer with background in research science. With my expertise in web development and my problem-solving skills, I'm committed to bringing innovative solutions to every project I work on
 //                 </motion.p>
 //             </div>
-//             <a 
-//             className='button' 
+//             <a
+//             className='button'
 //             href='#projects'
-          
+
 //             >
 //             Learn more
 //             </a>
-            
+
 //         </section>
 //     )
 // }
@@ -55,14 +55,14 @@
 // export default function ProjectCard({data}) {
 
 //     return (
-//         <motion.div 
+//         <motion.div
 //         key={data.name}
 //         initial={{
 //             opacity:0,
 //             x:-100,
 //             }}
 //         whileInView={{
-//             opacity:1, 
+//             opacity:1,
 //             x:0,
 //             transition: {
 //               delay: 0.2,
@@ -71,7 +71,7 @@
 //         }}
 //         viewport={{ once: true }}
 //         className='project-card'
-//         >   
+//         >
 //             {data.img ?
 //             <img className="project-img" src={data.img} alt={data.name}/> :
 //             <div className='project-img default-img'>Coming Soon</div>
@@ -92,8 +92,6 @@
 //         </motion.div>
 //     )
 // }
-
-
 
 /* old version */
 /* .big-card {

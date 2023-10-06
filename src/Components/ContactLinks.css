@@ -2,44 +2,44 @@
 Media queries for mobile/narrow screen */
 
 .contact-links-container {
-    position: absolute;
-    /* positioned roughly in the center right of screen */
-    top: 35%; 
-    right: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
+  position: absolute;
+  /* positioned roughly in the center right of screen */
+  top: 35%;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .contact-link {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .hover-background {
-    position: absolute;
-    border-radius: 10px;
-    /* position in center of parent  */
-    top: 50%;
-    left: 50%;
-    /* will expand from no width and height on hover */
-    width: 0;
-    height: 0;
-    background-color: rgb(240, 24, 0);
-    /* transition for the on hover animation */
-    transition: all 0.3s cubic-bezier(.47,1.64,.41,.8);
+  position: absolute;
+  border-radius: 10px;
+  /* position in center of parent  */
+  top: 50%;
+  left: 50%;
+  /* will expand from no width and height on hover */
+  width: 0;
+  height: 0;
+  background-color: rgb(240, 24, 0);
+  /* transition for the on hover animation */
+  transition: all 0.3s cubic-bezier(0.47, 1.64, 0.41, 0.8);
 }
 
 .contact-icon {
-    color: rgb(255, 255, 255);
-    height: 25px;
-    width: 25px;
-    /* z-index to ensure icon in front  */
-    z-index: 100;
+  color: rgb(255, 255, 255);
+  height: 25px;
+  width: 25px;
+  /* z-index to ensure icon in front  */
+  z-index: 100;
 }
 
 .contact-link:hover > .contact-icon {
@@ -47,20 +47,20 @@ Media queries for mobile/narrow screen */
 }
 
 .contact-link:hover > .hover-background {
-    width: 50px;
-    height: 50px;
-    /* translate half of width and height to keep centered as object expands */
-    transform: translate(-25px, -25px) rotate(180deg);
+  width: 50px;
+  height: 50px;
+  /* translate half of width and height to keep centered as object expands */
+  transform: translate(-25px, -25px) rotate(180deg);
 }
 
 /* On narrow screens and mobile reposition contact links amongst other hero elements */
-@media (max-width:800px) {
-    .contact-links-container {
-        position: relative;
-        top: 0;
-        right: 0;
-        flex-direction: row;
-        gap: 3rem;
-        margin: 0.5rem 0 2rem;
-    }
+@media (max-width: 800px) {
+  .contact-links-container {
+    position: relative;
+    top: 0;
+    right: 0;
+    flex-direction: row;
+    gap: 3rem;
+    margin: 0.5rem 0 2rem;
+  }
 }
