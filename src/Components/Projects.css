@@ -9,13 +9,3 @@ Media queries for mobile/narrow screen */
   gap: 2rem;
   padding: 1rem 0;
 }
-
-/* Narrow screen and mobile - verticle project cards with horizontal scroll */
-@media (max-width: 800px) {
-  .projects-container {
-    flex-direction: row;
-    justify-content: flex-start;
-    overflow-x: scroll;
-    padding: 1rem;
-  }
-}

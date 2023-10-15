@@ -11,11 +11,11 @@ export default function ProjectCard({ data }) {
       key={data.name}
       initial={{
         opacity: 0,
-        x: -200,
+        y: 100,
       }}
       whileInView={{
         opacity: 1,
-        x: 0,
+        y: 0,
         transition: {
           delay: 0.5,
           duration: 1,
@@ -25,13 +25,13 @@ export default function ProjectCard({ data }) {
     >
       <div className="project-text-container">
         <h3>{data.name}</h3>
-        {data.discription && <p className="project-text">{data.discription}</p>}
         <div className="technologies">
           {data.technologies.map((item) => (
             <p key={item}>{item}</p>
           ))}
         </div>
       </div>
+      {data.discription && <p className="project-text">{data.discription}</p>}
       {data.img ? (
         <img className="project-img" src={data.img} alt={data.name} />
       ) : (
@@ -46,7 +46,6 @@ export default function ProjectCard({ data }) {
             className="button project-btn"
           >
             Demo
-            <FaAngleRight />
           </a>
         )}
         {data.github && (
@@ -57,7 +56,6 @@ export default function ProjectCard({ data }) {
             className="button project-btn"
           >
             GitHub
-            <FaAngleRight />
           </a>
         )}
       </div>
