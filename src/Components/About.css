@@ -8,7 +8,7 @@ Media queries for mobile/narrow screen */
   justify-content: space-around;
 }
 
-.about-container {
+.about-content {
   display: flex;
 }
 
@@ -22,7 +22,7 @@ Media queries for mobile/narrow screen */
 }
 
 @media (max-width: 800px) {
-  .about-container {
+  .about-content {
     flex-direction: column;
     align-items: center;
   }

@@ -3,11 +3,16 @@ Media queries for mobile/narrow screen */
 
 .contact-container {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  padding: 2rem;
-  gap: 1.5rem;
   /* margin for space between form and footer when verticle window height is reduced  */
   margin-bottom: 2rem;
+}
+
+.contact-content {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
 }
 
 .contact-text {
@@ -84,9 +89,9 @@ input:focus {
 
 /* switch contact section and form to single column for narrow screens */
 @media (max-width: 800px) {
-  .contact-container {
+  .contact-content {
     flex-direction: column;
-    padding: 1rem 2rem;
+    padding: 1rem;
     /* margin for space between form and footer when verticle window height is reduced  */
     margin-bottom: 4rem;
   }
