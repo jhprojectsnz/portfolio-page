@@ -5,18 +5,19 @@ Media queries for mobile/narrow screen */
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(3, auto);
-  width: 90%;
-  gap: 1.5rem;
+  grid-template-rows: 5rem auto auto;
+  width: 95%;
+  min-height: 23rem;
+  gap: 0 1.5rem;
   padding: 2rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .project-img {
   grid-column: 2;
-  grid-row: 1 / 4;
-  width: 250px;
-  align-self: center;
+  grid-row: 1 / 2;
+  width: 300px;
+  /* align-self: center; */
   object-fit: cover;
   object-position: top;
   border-radius: 10px;
@@ -56,14 +57,17 @@ Media queries for mobile/narrow screen */
 
 .btn-container {
   display: flex;
+  justify-content: center;
+  align-self: flex-end;
   flex-wrap: wrap;
   gap: 2rem; /*between buttons*/
+  grid-column: 1 / 3;
 }
 
 .project-btn {
   height: fit-content;
   /*Padding and font smaller than other buttons*/
-  padding: 10px 15px;
+  padding: 10px 20px;
   font-size: 0.9rem;
 }
 
@@ -78,9 +82,7 @@ Media queries for mobile/narrow screen */
   }
 
   .project-img {
-    /* min-width: auto; */
-    /* height: 250px; */
-    width: 200px;
+    min-height: 200px;
     grid-column: 2;
     grid-row: 1 / 3;
     justify-self: center;
@@ -110,6 +112,7 @@ Media queries for mobile/narrow screen */
 
   .btn-container {
     justify-content: center;
+    align-self: flex-start;
     grid-column: 1;
     grid-row: 2;
   }
@@ -124,7 +127,6 @@ Media queries for mobile/narrow screen */
 
   .project-img {
     width: 90%;
-    height: 230px;
     order: 1;
     margin-bottom: 1rem;
   }
@@ -145,5 +147,6 @@ Media queries for mobile/narrow screen */
   .btn-container {
     order: 4;
     margin: 1rem 0;
+    align-self: center;
   }
 }

@@ -10,6 +10,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* Padding to leave space for footer */
+  padding-bottom: 3rem;
 }
 
 section {
@@ -18,7 +20,6 @@ section {
   /* Each section should take up at least full screen */
   width: 100%;
   max-width: 900px;
-  min-height: 100vh;
   padding: 1rem;
 }
 
@@ -29,9 +30,14 @@ h2 {
   border-bottom: rgb(240, 24, 0) solid 2px;
 }
 
+summary {
+  color: rgb(106, 106, 106);
+  cursor: pointer;
+}
+
 .subtitle-container {
   width: 100%;
-  padding: 0 0 1rem 2rem;
+  padding: 0 0 1rem 0rem;
   font-size: 1.5rem;
 }
 

@@ -1,5 +1,4 @@
 import "./ProjectCard.css";
-import { FaAngleRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 // Framer motion used to animate in elements as they come into view for the first time
@@ -31,7 +30,9 @@ export default function ProjectCard({ data }) {
           ))}
         </div>
       </div>
-      {data.discription && <p className="project-text">{data.discription}</p>}
+      {data.discription && (
+        <div className="project-text">{data.discription}</div>
+      )}
       {data.img ? (
         <img className="project-img" src={data.img} alt={data.name} />
       ) : (

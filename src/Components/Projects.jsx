@@ -7,8 +7,7 @@ import "./Projects.css";
 export default function Projects() {
   const projects = [
     {
-      name: "Direct from grower",
-      type: "project",
+      name: "Find Fresh Produce",
       img: producefinderImg,
       url: "#",
       github: "#",
@@ -23,15 +22,17 @@ export default function Projects() {
           This web app connects growers with consumers - maximising New
           Zealanders access to fresh produce directly from the grower. <br />
           <br />
-          The Demo version (Front-end only) encompasses the complete user
-          experience - search, save, create, update or delete stalls as if you
-          were a buyer or a seller.
+          <details>
+            <summary>More Details</summary>
+            The Demo version (Front-end only) encompasses the complete user
+            experience - search, save, create, update or delete stalls as if you
+            were a buyer or a seller.
+          </details>
         </>
       ),
     },
     {
       name: "Quick Meal Planner",
-      type: "project",
       img: mealPlannerImg,
       url: "#",
       github: "#",
@@ -51,7 +52,6 @@ export default function Projects() {
     },
     {
       name: "Portfolio page",
-      type: "project",
       img: profileImg,
       github: "#",
       technologies: ["HTML/CSS", "JavaScript", "React"],

@@ -1,7 +1,6 @@
-/* Default styles for PC/wide screen 
-Media queries for mobile/narrow screen */
-
-/* Wide screen - horizontal project cards stacked vertically  */
+#projects {
+  margin-top: 1rem;
+}
 .projects-container {
   display: flex;
   flex-direction: column;
