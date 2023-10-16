@@ -54,13 +54,16 @@ Media queries for mobile/narrow screen */
 }
 
 /* On narrow screens and mobile reposition contact links amongst other hero elements */
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .contact-links-container {
     position: relative;
     top: 0;
     right: 0;
     flex-direction: row;
     gap: 3rem;
-    margin: 0.5rem 0 2rem;
+    margin: 2rem 0;
+  }
+  .intro-text {
+    padding: 0 1rem;
   }
 }
