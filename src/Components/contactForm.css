@@ -44,9 +44,12 @@ Media queries for mobile/narrow screen */
   border-radius: 10px;
 }
 
-.input-container input {
+.input-container input,
+textarea {
   /* make sure the input area is the full length of the surrounding border */
   min-width: 100%;
+  font-size: 1rem;
+  color: rgb(45, 45, 45);
   border: none;
 }
 
@@ -66,16 +69,18 @@ Media queries for mobile/narrow screen */
 .contact-form label {
   /* shift labels up so they sit over the input border */
   position: absolute;
-  top: -9px;
+  top: -11px;
   left: 10px;
-  padding: 2px;
+  padding: 4px;
   background-color: white;
+  /* font-weight: 400; */
 }
 
 .contact-form textarea {
   height: 150px;
   resize: none;
   border: none;
+  padding: 0.3rem;
 }
 
 textarea:focus,

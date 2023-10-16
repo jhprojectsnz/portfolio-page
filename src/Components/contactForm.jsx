@@ -30,14 +30,19 @@ export default function ContactForm() {
             <h4>Get in touch!</h4>
             <p className="main-text">
               Let's work together to bring your web development vision to life!
-              Whether you have a specific project in mind or are interested in
-              potential employment opportunities, I'm here to help. With my
-              passion for learning and problem-solving skills, I'm confident
-              that I can provide innovative solutions that meet your needs.I
-              look forward to discussing how we can work together.
+              Whether you have a specific project in mind or think I'd be a good
+              fit for your team, I'm here to help. With my passion for learning
+              and problem-solving skills, I'm confident I can provide innovative
+              solutions that meet your needs. I look forward to discussing how
+              we can work together.
             </p>
           </div>
-          <form className="contact-form" name="contact">
+          <form
+            className="contact-form"
+            name="contact"
+            action="https://formspree.io/f/mgejrrde"
+            method="POST"
+          >
             <div className="input-container">
               <label htmlFor="name">Name</label> <br />
               <input type="text" id="name" name="name" required />
@@ -51,7 +56,7 @@ export default function ContactForm() {
               <textarea id="message" name="message" required></textarea>
             </div>
             <div className="form-right">
-              <input className="button" type="submit" value="Submit message" />
+              <input className="button" type="submit" />
             </div>
           </form>
         </div>
