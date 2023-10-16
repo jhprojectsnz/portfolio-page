@@ -14,10 +14,10 @@ export default function Hero() {
         {/* separates name and text - animates in so can't use border of .intro-text */}
         <p className="intro-text">
           <span className="hero-bold">Welcome to my portfolio!</span> <br /> I'm
-          a passionate and driven developer with background in research science.
-          With my expertise in web development and my problem-solving skills,
-          I'm committed to bringing innovative solutions to every project I work
-          on
+          a self-taught web developer with a passion for solving complex
+          problems. I work with HTML, CSS, JavaScript, and various frameworks
+          and libraries to build websites that solve real-world problem I'm
+          committed to bringing innovative solutions to every project I work on
         </p>
       </div>
       <ContactLinks />
