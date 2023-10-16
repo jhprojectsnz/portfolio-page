@@ -13,8 +13,21 @@ export default function Projects() {
       url: "#",
       github: "#",
       technologies: ["HTML/CSS", "JavaScript", "React"],
-      discription:
-        "Search for friut and vegetable growers with roadside stalls, market days and click and collect services. Buy direct to get fresh produce at affordable prices while supporting our local farmers",
+      discription: (
+        <>
+          Many growers around NZ sell fresh, affordable fruit and vegetables
+          directly to consumers at roadside stalls, market days or small shops.
+          But unless you're passing by, it's hard to know where these stalls are
+          and what they have in stock. <br />
+          <br />
+          This web app connects growers with consumers - maximising New
+          Zealanders access to fresh produce directly from the grower. <br />
+          <br />
+          The Demo version (Front-end only) encompasses the complete user
+          experience - search, save, create, update or delete stalls as if you
+          were a buyer or a seller.
+        </>
+      ),
     },
     {
       name: "Quick Meal Planner",
@@ -23,8 +36,18 @@ export default function Projects() {
       url: "#",
       github: "#",
       technologies: ["HTML/CSS", "JavaScript", "React"],
-      discription:
-        "Fridge empty? Can't decide what to cook? Get delicious meal suggestions and generate a sorted shopping list in minutes.",
+      discription: (
+        <>
+          Trying to decide what to cook for dinners is not always easy. Then
+          once you decide, getting a shopping list together can be tedious.
+          <br />
+          <br />
+          This web app streamlines this process - suggesting delicious recipes
+          so the user doesn't have to decide. A shopping list for the selected
+          recipes is generated automatically. The shopping list can be sorted
+          either by recipe or food category to simplify the supermarket shop.
+        </>
+      ),
     },
     {
       name: "Portfolio page",
@@ -32,8 +55,12 @@ export default function Projects() {
       img: profileImg,
       github: "#",
       technologies: ["HTML/CSS", "JavaScript", "React"],
-      discription:
-        "My portfolio page outlining my latest projects, skills and ways to get in contact",
+      discription: (
+        <>
+          My portfolio page displaying my latest projects, skills and ways to
+          get in contact
+        </>
+      ),
     },
   ];
 
