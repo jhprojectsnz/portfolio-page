@@ -4,9 +4,9 @@ import {
   SiJavascript,
   SiReact,
   SiVisualstudiocode,
-  SiPostman,
   SiGithub,
   SiGit,
+  SiFigma,
 } from "react-icons/si";
 import { BiDevices } from "react-icons/bi";
 import "./skills.css";
@@ -66,8 +66,8 @@ export default function Skills() {
           <p className="skill-text">Git</p>
         </div>
         <div className="skill">
-          <SiPostman className="skill-icon" />
-          <p className="skill-text">Postman</p>
+          <SiFigma className="skill-icon" />
+          <p className="skill-text">Figma</p>
         </div>
       </div>
     </motion.div>

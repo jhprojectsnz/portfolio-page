@@ -9,18 +9,18 @@ Media queries for mobile/narrow screen */
   width: 90%;
   gap: 1.5rem;
   padding: 2rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .project-img {
   grid-column: 2;
   grid-row: 1 / 4;
-  min-width: 250px;
-  height: 200px;
+  width: 250px;
+  align-self: center;
   object-fit: cover;
   object-position: top;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
 }
 
 .default-img {
@@ -71,29 +71,34 @@ Media queries for mobile/narrow screen */
   .project-card {
     height: auto;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
     align-items: center;
     padding: 1.5rem 1rem;
     gap: 0;
   }
 
   .project-img {
-    min-width: auto;
-    height: 150px;
+    /* min-width: auto; */
+    /* height: 250px; */
+    width: 200px;
     grid-column: 2;
-    grid-row: 1 / 4;
+    grid-row: 1 / 3;
     justify-self: center;
   }
 
   .project-text-container {
     grid-column: 1;
-    grid-row: 1 / 3;
+    grid-row: 1;
     padding: 0 1rem;
     margin-bottom: 1rem;
   }
 
   .project-card h3 {
     text-align: center;
+  }
+
+  .technologies {
+    justify-content: center;
   }
 
   .project-text {
@@ -106,39 +111,35 @@ Media queries for mobile/narrow screen */
   .btn-container {
     justify-content: center;
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 2;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .project-card {
     display: flex;
     flex-direction: column;
-    padding: 0;
+    padding: 1.5rem 1rem;
   }
 
   .project-img {
-    width: 100%;
-    height: 220px;
-    margin: 0;
-    border-radius: 0;
+    width: 90%;
+    height: 230px;
+    order: 1;
+    margin-bottom: 1rem;
   }
 
   .project-text-container {
     /*Shift text below image*/
     order: 2;
-    margin: 1.5rem 0 1rem;
-  }
-
-  .technologies {
-    justify-content: center;
+    margin: 1rem 0 1rem;
   }
 
   .project-text {
-    /* shift below technologies by chaning order */
+    /* shift to below technologies */
     order: 3;
     padding: 0 1rem;
-    margin: 0 0 1rem;
+    margin: 0;
   }
 
   .btn-container {

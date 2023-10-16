@@ -1,10 +1,21 @@
 import ProjectCard from "./ProjectCard";
 import mealPlannerImg from "../assets/mealplanner.jpg";
 import profileImg from "../assets/profile.jpg";
+import producefinderImg from "../assets/producefinder.jpg";
 import "./Projects.css";
 
 export default function Projects() {
   const projects = [
+    {
+      name: "Direct from grower",
+      type: "project",
+      img: producefinderImg,
+      url: "#",
+      github: "#",
+      technologies: ["HTML/CSS", "JavaScript", "React"],
+      discription:
+        "Search for friut and vegetable growers with roadside stalls, market days and click and collect services. Buy direct to get fresh produce at affordable prices while supporting our local farmers",
+    },
     {
       name: "Quick Meal Planner",
       type: "project",
@@ -23,13 +34,6 @@ export default function Projects() {
       technologies: ["HTML/CSS", "JavaScript", "React"],
       discription:
         "My portfolio page outlining my latest projects, skills and ways to get in contact",
-    },
-    {
-      name: "Direct from grower",
-      type: "project",
-      technologies: ["HTML/CSS", "JavaScript", "React"],
-      discription:
-        "Search for friut and vegetable growers with roadside stalls, market days and click and collect services. Buy direct to get fresh produce at affordable prices while supporting our local farmers",
     },
   ];
 
