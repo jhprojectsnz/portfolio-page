@@ -16,12 +16,6 @@ Media queries for mobile/narrow screen */
   color: white;
 }
 
-.hero-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 /* Transparent element to darken background image */
 .hero-section::before {
   content: "";
@@ -33,10 +27,17 @@ Media queries for mobile/narrow screen */
   background-color: rgba(0, 0, 0, 0.85);
 }
 
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .name-container {
   display: flex;
   flex-direction: column;
-  animation: name-animation-wide 1s ease-in-out forwards;
+  opacity: 0;
+  animation: name-animation-wide 1s ease-in-out 0.5s forwards;
 
   & h1 {
     font-size: 4rem;
@@ -58,15 +59,17 @@ Media queries for mobile/narrow screen */
   width: 2px;
   margin: 0 1.5rem;
   background-color: rgb(253, 253, 253);
-  animation: line-animation-wide 1s ease-in-out forwards;
+  opacity: 0;
+  animation: line-animation-wide 1s ease-in-out 0.5s forwards;
 }
 
 .intro-text {
-  max-width: 400px;
+  max-width: 430px;
   font-size: 1.3rem;
   font-weight: 200;
-  line-height: 1.6rem;
-  animation: text-animation-wide 1s ease-in-out forwards;
+  line-height: 1.7rem;
+  opacity: 0;
+  animation: text-animation-wide 1s ease-in-out 0.5s forwards;
 }
 
 .learn-more-btn {
@@ -75,11 +78,12 @@ Media queries for mobile/narrow screen */
   font-size: 1.5rem;
   padding: 0.6rem 2.5rem;
   color: rgb(255, 255, 255);
-  /* This allows ::after to be behind text but in front of button using z-index -1 */
+  /* z-index: 1 - allows ::after element to be behind button text but in front of button using z-index -1 */
   z-index: 1;
   transition: transform 200ms ease-in;
 }
 
+/* This element appears on hover */
 .learn-more-btn::after {
   content: "";
   position: absolute;
@@ -103,6 +107,7 @@ Media queries for mobile/narrow screen */
 
 .hero-bold {
   font-weight: 500;
+  line-height: 2.1rem;
 }
 
 /* Media queries */
@@ -117,18 +122,18 @@ Media queries for mobile/narrow screen */
   }
 
   .name-container {
-    animation: name-animation-narrow 1s ease-in-out forwards;
+    animation: name-animation-narrow 1s ease-in-out 0.5s forwards;
   }
 
   .separator-line {
     height: 2px;
     width: 300px;
     margin: 1.5rem 0;
-    animation: line-animation-narrow 1s ease-in-out forwards;
+    animation: line-animation-narrow 1s ease-in-out 0.5s forwards;
   }
 
   .intro-text {
-    animation: text-animation-narrow 1s ease-in-out forwards;
+    animation: text-animation-narrow 1s ease-in-out 0.5s forwards;
   }
 
   .learn-more-btn {
@@ -138,12 +143,6 @@ Media queries for mobile/narrow screen */
 
 /* Only for mobile and very narrow screens */
 @media (max-width: 600px) {
-  /* remove button - no space for it */
-  .learn-more-btn {
-    font-size: 1.2rem;
-    bottom: 50px;
-  }
-
   /* add padding to space out hero content  */
   .hero-section {
     min-height: 100vh;
@@ -155,6 +154,11 @@ Media queries for mobile/narrow screen */
     font-size: 1.1rem;
     font-weight: 200;
     line-height: 1.3rem;
+  }
+
+  .learn-more-btn {
+    font-size: 1.2rem;
+    bottom: 50px;
   }
 }
 

@@ -9,18 +9,18 @@ export default function Projects() {
     {
       name: "Find Fresh Produce",
       img: producefinderImg,
-      url: "#",
+      url: "https://findfreshproduce.vercel.app/",
       github: "#",
       technologies: ["HTML/CSS", "JavaScript", "React"],
       discription: (
         <>
           Many growers around NZ sell fresh, affordable fruit and vegetables
-          directly to consumers at roadside stalls, market days or small shops.
+          directly to consumers at roadside stalls, market days and small shops.
           But unless you're passing by, it's hard to know where these stalls are
           and what they have in stock. <br />
           <br />
           This web app connects growers with consumers - maximising New
-          Zealanders access to fresh produce directly from the grower. <br />
+          Zealanders access to fresh produce directly from the source. <br />
           <br />
           <details>
             <summary>More Details</summary>
@@ -34,7 +34,7 @@ export default function Projects() {
     {
       name: "Quick Meal Planner",
       img: mealPlannerImg,
-      url: "#",
+      url: "https://quickmealplanner.vercel.app/",
       github: "#",
       technologies: ["HTML/CSS", "JavaScript", "React"],
       discription: (
@@ -58,7 +58,7 @@ export default function Projects() {
       discription: (
         <>
           My portfolio page displaying my latest projects, skills and ways to
-          get in contact
+          get in touch.
         </>
       ),
     },

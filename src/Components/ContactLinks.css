@@ -3,7 +3,7 @@ Media queries for mobile/narrow screen */
 
 .contact-links-container {
   position: absolute;
-  /* positioned roughly in the center right of screen */
+  /* Positioned roughly in the center right of screen */
   top: 35%;
   right: 30px;
   display: flex;
@@ -23,10 +23,10 @@ Media queries for mobile/narrow screen */
 .hover-background {
   position: absolute;
   border-radius: 10px;
-  /* position in center of parent  */
+  /* Position in center of parent  */
   top: 50%;
   left: 50%;
-  /* will expand from no width and height on hover */
+  /* Will expand from no width and height on hover */
   width: 0;
   height: 0;
   background-color: rgb(240, 24, 0);
@@ -49,7 +49,7 @@ Media queries for mobile/narrow screen */
 .contact-link:hover > .hover-background {
   width: 50px;
   height: 50px;
-  /* translate half of width and height to keep centered as object expands */
+  /* Translate half of width and height to keep centered as object expands */
   transform: translate(-25px, -25px) rotate(180deg);
 }
 
@@ -60,7 +60,6 @@ Media queries for mobile/narrow screen */
     top: 0;
     right: 0;
     flex-direction: row;
-    gap: 3rem;
     margin: 2rem 0;
   }
   .intro-text {

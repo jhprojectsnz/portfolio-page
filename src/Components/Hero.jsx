@@ -13,15 +13,18 @@ export default function Hero() {
         <div className="separator-line" />
         {/* separates name and text - animates in so can't use border of .intro-text */}
         <p className="intro-text">
-          <span className="hero-bold">Welcome to my portfolio!</span> <br /> I'm
-          a self-taught web developer with a passion for solving complex
-          problems. I work with HTML, CSS, JavaScript, and various frameworks
-          and libraries to build websites that solve real-world problem I'm
-          committed to bringing innovative solutions to every project I work on
+          <span className="hero-bold">Welcome to my portfolio!</span>
+          <br /> I'm a self-taught developer based in Auckland, NZ. <br />I
+          specialise in solving problems and creating costum web applications
+          for various needs. I enjoy taking on new challenges and learning new
+          skills.
         </p>
       </div>
       <ContactLinks />
-      <a className="button learn-more-btn appear-animation" href="#projects">
+      <a
+        className="button learn-more-btn appear-animation hover"
+        href="#projects"
+      >
         Learn more
       </a>
     </section>

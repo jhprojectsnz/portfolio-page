@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  font-family: "League Spartan", Arial, sans-serif;
 }
 
 .App {
@@ -67,7 +70,7 @@ summary {
 /* Class for elements that should fade in on first load (hero and nav) */
 .appear-animation {
   opacity: 0;
-  animation: appear 2s linear 1s forwards;
+  animation: appear 1.5s linear 2s forwards;
 }
 
 @keyframes appear {
@@ -76,12 +79,5 @@ summary {
   }
   to {
     opacity: 1;
-  }
-}
-
-/* On narrow screens and mobiles sections don't need to take up 100vh */
-@media (max-width: 600px) {
-  section {
-    min-height: auto;
   }
 }
