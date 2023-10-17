@@ -10,7 +10,7 @@ export default function Projects() {
       name: "Find Fresh Produce",
       img: producefinderImg,
       url: "https://findfreshproduce.vercel.app/",
-      github: "#",
+      github: "https://github.com/jhprojectsnz/produce-finder",
       technologies: ["HTML/CSS", "JavaScript", "React"],
       discription: (
         <>
@@ -35,7 +35,7 @@ export default function Projects() {
       name: "Quick Meal Planner",
       img: mealPlannerImg,
       url: "https://quickmealplanner.vercel.app/",
-      github: "#",
+      github: "https://github.com/jhprojectsnz/meal-planner",
       technologies: ["HTML/CSS", "JavaScript", "React"],
       discription: (
         <>
@@ -53,7 +53,7 @@ export default function Projects() {
     {
       name: "Portfolio page",
       img: profileImg,
-      github: "#",
+      github: "https://github.com/jhprojectsnz/portfolio-page",
       technologies: ["HTML/CSS", "JavaScript", "React"],
       discription: (
         <>
