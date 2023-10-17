@@ -146,6 +146,7 @@ Media queries for mobile/narrow screen */
 @media (max-width: 600px) {
   .hero-section {
     min-height: 100vh;
+    flex-direction: column;
   }
 
   .intro-text {
