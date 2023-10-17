@@ -14,6 +14,14 @@ Media queries for mobile/narrow screen */
   background-repeat: no-repeat;
   background-position: center center;
   color: white;
+
+  /* Variables for starting animation - changed in media query */
+  --name-animation-start: translateX(-200px);
+  --name-animation-end: translateX(0);
+  --line-animation-start: translateY(-200px);
+  --line-animation-end: translateY(0);
+  --text-animation-start: translateX(200px);
+  --text-animation-end: translateX(0);
 }
 
 /* Transparent element to darken background image */
@@ -37,7 +45,7 @@ Media queries for mobile/narrow screen */
   display: flex;
   flex-direction: column;
   opacity: 0;
-  animation: name-animation-wide 1s ease-in-out 0.5s forwards;
+  animation: name-animation 1s ease-in-out 0.5s forwards;
 
   & h1 {
     font-size: 4rem;
@@ -60,7 +68,7 @@ Media queries for mobile/narrow screen */
   margin: 0 1.5rem;
   background-color: rgb(253, 253, 253);
   opacity: 0;
-  animation: line-animation-wide 1s ease-in-out 0.5s forwards;
+  animation: line-animation 1s ease-in-out 0.5s forwards;
 }
 
 .intro-text {
@@ -69,7 +77,7 @@ Media queries for mobile/narrow screen */
   font-weight: 200;
   line-height: 1.7rem;
   opacity: 0;
-  animation: text-animation-wide 1s ease-in-out 0.5s forwards;
+  animation: text-animation 1s ease-in-out 0.5s forwards;
 }
 
 .learn-more-btn {
@@ -80,7 +88,7 @@ Media queries for mobile/narrow screen */
   color: rgb(255, 255, 255);
   /* z-index: 1 - allows ::after element to be behind button text but in front of button using z-index -1 */
   z-index: 1;
-  transition: transform 200ms ease-in;
+  transition: transform 100ms ease-in-out;
 }
 
 /* This element appears on hover */
@@ -95,7 +103,7 @@ Media queries for mobile/narrow screen */
   z-index: -1;
   transform: scaleY(0);
   border-radius: 25px;
-  transition: transform 100ms ease-in;
+  transition: transform 100ms ease-in-out;
 }
 
 .learn-more-btn:hover::after {
@@ -114,120 +122,76 @@ Media queries for mobile/narrow screen */
 /* for narrow screens and mobile - flip content to column and change direction of animations */
 @media (max-width: 900px) {
   .hero-section {
-    flex-direction: column;
+    /* Variables for animations - narrow screen */
+    --name-animation-start: translateY(-200px);
+    --name-animation-end: translateY(0px);
+    --line-animation-start: translateY(-200px);
+    --line-animation-end: translateY(0);
+    --text-animation-start: translateY(200px);
+    --text-animation-end: translateY(0);
   }
 
   .hero-container {
     flex-direction: column;
   }
 
-  .name-container {
-    animation: name-animation-narrow 1s ease-in-out 0.5s forwards;
-  }
-
   .separator-line {
     height: 2px;
-    width: 300px;
+    width: 400px;
     margin: 1.5rem 0;
-    animation: line-animation-narrow 1s ease-in-out 0.5s forwards;
-  }
-
-  .intro-text {
-    animation: text-animation-narrow 1s ease-in-out 0.5s forwards;
-  }
-
-  .learn-more-btn {
-    bottom: 40px;
   }
 }
 
 /* Only for mobile and very narrow screens */
 @media (max-width: 600px) {
-  /* add padding to space out hero content  */
   .hero-section {
     min-height: 100vh;
-    padding-top: 5rem;
-    padding-bottom: 3rem;
   }
 
   .intro-text {
     font-size: 1.1rem;
-    font-weight: 200;
-    line-height: 1.3rem;
+    line-height: 1.4rem;
   }
 
   .learn-more-btn {
-    font-size: 1.2rem;
-    bottom: 50px;
+    position: relative;
+    font-size: 1.3rem;
+    top: 4rem;
   }
 }
 
 /* Animations */
 /* Elements enter from different direction depending on if the screen is wide or narrow */
-/* Separate keyframes used so that the animation property can be easily changed by media query */
 
-@keyframes name-animation-wide {
+@keyframes name-animation {
   from {
     opacity: 0;
-    transform: translateX(-200px);
+    transform: var(--name-animation-start);
   }
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: var(--name-animation-end);
   }
 }
 
-@keyframes line-animation-wide {
+@keyframes line-animation {
   from {
     opacity: 0;
-    transform: translateY(-200px);
+    transform: var(--line-animation-start);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: var(--line-animation-end);
   }
 }
 
-@keyframes text-animation-wide {
+@keyframes text-animation {
   from {
     opacity: 0;
-    transform: translateX(200px);
+    transform: var(--text-animation-start);
   }
   to {
     opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes name-animation-narrow {
-  from {
-    opacity: 0;
-    transform: translateY(-200px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes line-animation-narrow {
-  from {
-    opacity: 0;
-    transform: translateY(-200px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes text-animation-narrow {
-  from {
-    opacity: 0;
-    transform: translateY(200px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+    transform: var(--text-animation-end);
   }
 }
