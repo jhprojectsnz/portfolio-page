@@ -111,7 +111,7 @@ Media queries for mobile/narrow screen */
   line-height: 2.1rem;
 }
 
-@media (hover: hover) {
+@media (min-width: 600px) {
   .learn-more-btn:hover::after {
     transform: scaleY(1);
   }
