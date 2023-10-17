@@ -42,17 +42,6 @@ Media queries for mobile/narrow screen */
   z-index: 100;
 }
 
-.contact-link:hover > .contact-icon {
-  color: rgb(0, 0, 0);
-}
-
-.contact-link:hover > .hover-background {
-  width: 50px;
-  height: 50px;
-  /* Translate half of width and height to keep centered as object expands */
-  transform: translate(-25px, -25px) rotate(180deg);
-}
-
 /* On narrow screens and mobile reposition contact links amongst other hero elements */
 @media (max-width: 600px) {
   .contact-links-container {
@@ -64,5 +53,20 @@ Media queries for mobile/narrow screen */
   }
   .intro-text {
     padding: 0 1rem;
+  }
+}
+
+/* Hover effect only for wide screens - not needed for mobile */
+/* Not ideal - tablets will still show hover effects after touch */
+@media (min-width: 500px) {
+  .contact-link:hover > .contact-icon {
+    color: rgb(0, 0, 0);
+  }
+
+  .contact-link:hover > .hover-background {
+    width: 50px;
+    height: 50px;
+    /* Translate half of width and height to keep centered as object expands */
+    transform: translate(-25px, -25px) rotate(180deg);
   }
 }

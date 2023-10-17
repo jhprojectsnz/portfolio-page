@@ -6,6 +6,8 @@
   padding: 0;
   scroll-behavior: smooth;
   font-family: "League Spartan", Arial, sans-serif;
+  /* Stop elements from highlighting blue when tapped -  mobile */
+  -webkit-tap-highlight-color: transparent;
 }
 
 .App {
@@ -58,8 +60,12 @@ summary {
   cursor: pointer;
 }
 
-.button:hover {
-  background-color: rgb(240, 24, 0, 0.8);
+/* Hover effect only for wide screens - not needed for mobile */
+/* Not ideal - tablets will still show hover effects after touch */
+@media (min-width: 500px) {
+  .button:hover {
+    background-color: rgb(240, 24, 0, 0.8);
+  }
 }
 
 .main-text {
