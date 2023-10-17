@@ -46,7 +46,7 @@ export default function ProjectCard({ data }) {
             rel="noreferrer"
             className="button project-btn"
           >
-            Demo
+            Website
           </a>
         )}
         {data.github && (
