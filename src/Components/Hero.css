@@ -111,15 +111,6 @@ Media queries for mobile/narrow screen */
   line-height: 2.1rem;
 }
 
-@media (min-width: 500px) {
-  .learn-more-btn:hover::after {
-    transform: scaleY(1);
-  }
-  .learn-more-btn:hover {
-    color: rgb(240, 24, 0);
-  }
-}
-
 /* Media queries */
 /* for narrow screens and mobile - flip content to column and change direction of animations */
 @media (max-width: 900px) {
@@ -160,6 +151,17 @@ Media queries for mobile/narrow screen */
     position: relative;
     font-size: 1.3rem;
     top: 4rem;
+  }
+}
+
+/* Hover effect only for wide screens - not needed for mobile */
+/* Not ideal - tablets will still show hover effects after touch */
+@media (min-width: 500px) {
+  .learn-more-btn:hover::after {
+    transform: scaleY(1);
+  }
+  .learn-more-btn:hover {
+    color: rgb(240, 24, 0);
   }
 }
 

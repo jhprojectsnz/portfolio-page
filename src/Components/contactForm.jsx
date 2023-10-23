@@ -34,7 +34,7 @@ export default function ContactForm() {
               fit for your team, I'm here to help. With my passion for learning
               and problem-solving skills, I'm confident I can provide innovative
               solutions that meet your needs. I look forward to discussing how
-              we can work together.
+              we can collaborate.
             </p>
           </div>
           <form
