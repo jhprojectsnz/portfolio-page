@@ -17,7 +17,8 @@
   align-items: center;
   /* Padding to leave space for footer */
   padding-bottom: 3rem;
-  overflow-x: hidden;
+  /* Stop the start up animation from adding a horizontal scroll */
+  overflow: hidden;
 }
 
 section {
