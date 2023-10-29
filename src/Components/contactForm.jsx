@@ -29,12 +29,12 @@ export default function ContactForm() {
           <div className="contact-text">
             <h4>Get in touch!</h4>
             <p className="main-text">
-              Let's work together to bring your web development vision to life!
+              Let's work together to bring your web development vision to life.
               Whether you have a specific project in mind or think I'd be a good
               fit for your team, I'm here to help. With my passion for learning
-              and problem-solving skills, I'm confident I can provide innovative
-              solutions that meet your needs. I look forward to discussing how
-              we can collaborate.
+              and ability to solve complex problems, I'm confident I can provide
+              innovative solutions that meet your needs. I look forward to
+              discussing how we can collaborate.
             </p>
           </div>
           <form

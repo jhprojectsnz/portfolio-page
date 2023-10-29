@@ -8,14 +8,14 @@ export default function Hero() {
         <div className="name-container">
           <h1>Jonathan</h1>
           <h1>Hubert</h1>
-          <h3>Web developer</h3>
+          <h3>Web Developer</h3>
         </div>
-        <div className="separator-line" />
         {/* separates name and text - animates in so can't use border of .intro-text */}
+        <div className="separator-line" />
         <p className="intro-text">
-          <span className="hero-bold">Welcome to my portfolio!</span>
+          <span className="hero-bold">Welcome!</span>
           <br /> I'm a self-taught developer based in Auckland, NZ. <br />I
-          specialise in solving problems and creating costum web applications
+          specialise in solving problems and creating custom web applications
           for various needs. I enjoy taking on new challenges and learning new
           skills.
         </p>

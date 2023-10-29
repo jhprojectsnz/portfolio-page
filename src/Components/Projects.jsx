@@ -15,9 +15,9 @@ export default function Projects() {
       discription: (
         <>
           Many growers around NZ sell fresh, affordable fruit and vegetables
-          directly to consumers at roadside stalls, market days and small shops.
-          But unless you're passing by, it's hard to know where these stalls are
-          and what they have in stock. <br />
+          directly to consumers at roadside stalls, market and small shops. But
+          unless you're passing by, it's hard to know where these stalls are and
+          what they have in stock. <br />
           <br />
           This web app connects growers with consumers - maximising New
           Zealanders access to fresh produce directly from the source. <br />
@@ -45,8 +45,8 @@ export default function Projects() {
           <br />
           This web app streamlines this process - suggesting delicious recipes
           so the user doesn't have to decide. A shopping list for the selected
-          recipes is generated automatically. The shopping list can be sorted
-          either by recipe or food category to simplify the supermarket shop.
+          recipes is generated and sorted automatically, simplifying the
+          supermarket shop.
         </>
       ),
     },

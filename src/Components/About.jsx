@@ -34,14 +34,15 @@ export default function About() {
             alt="cartoon man at computer"
           />
           <p className="about-text main-text">
-            Hi! I’m Jonathan Hubert, a web developer with a background as a
-            research scientist.
+            Hi! I’m Jonathan Hubert, a web developer with a background in
+            research chemistry.
             <br />
             <br />
-            As a research scientist, I developed a strong foundation in critical
-            thinking, problem-solving, and attention to detail. These skills
-            have proven invaluable in my transition to web development, where I
-            approach each project with a rigorous and analytical mindset.
+            My critical thinking, problem-solving, and attention to detail
+            skills have been essential for my success in various research roles.
+            These skills have proven invaluable in my transition to web
+            development, where I approach each project with a rigorous and
+            analytical mindset.
             <br />
             <br />
             What I love most about web development is the ability to bring ideas
