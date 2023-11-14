@@ -15,9 +15,8 @@ export default function Hero() {
         <p className="intro-text">
           <span className="hero-bold">Welcome!</span>
           <br /> I'm a self-taught developer based in Auckland, NZ. <br />I
-          specialise in solving problems and creating custom web applications
-          for various needs. I enjoy taking on new challenges and learning new
-          skills.
+          specialise in solving problems and creating custom web applications. I
+          enjoy taking on new challenges and learning new skills.
         </p>
       </div>
       <ContactLinks />
